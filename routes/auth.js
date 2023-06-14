@@ -5,15 +5,15 @@ import {checkAuth} from "../utils/checkAuth.js";
 const router = new Router()
 
 //Register user
-//http://localhost:3002/api/auth/register
+//http://localhost:3002/api/register
 router.post('/register', register)
 
 //Login user
-//http://localhost:3002/api/auth/login
+//http://localhost:3002/api/login
 router.post('/login', login)
 
 //Get Me
 //http://localhost:3002/api/auth/me
-router.get('/getMe',checkAuth, getMe)
+router.get('/me',checkAuth, getMe)
 
 export default router
